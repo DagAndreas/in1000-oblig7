@@ -1,0 +1,14 @@
+2) Hvis du lagrer det som en liste, kan man lett itterere gjennom innholdet via en for-loop.
+	Hvis man bruker en ordliste har elementene i ordlisten ingen naturlig rekkefølge å avspilles. I forhold til en
+	en vanlig liste, det har en start og slutt. Første instinktet kunne vært at man skulle lage en spilleliste hvor artist
+	var nøkkel, og en sang var variabelen, men da ville man ikke kunne hatt flere sanger av samme artist siden det ville 
+	vært samme nøkkel. Hvis man hadde brukt sangtittelen som nøkkel kunne man ikke hatt samme sangtittel men av forskjellige
+	artister i samme listen. En liste er oversiktelig og nyttig til å samle flere objekter.
+
+3) Hvis man vil lese inn flere filer under samme spillelisteobjektet, kan det være fordel å ha det som en tilgjengelig metode, 
+	istedenfor å ha det som parameter ved opprettelsen. Det betyr ikke at man ikke KAN ha det som et parameter i klassen,
+	men det er simplere uten.
+
+4) Det som må endres i spillelisteklassen er hvordan sanger leses inn. Enten når artist og sangtittel splittes, måtte rekkefølgen 
+	på [0] og [1] byttes til [1] og [0]. Hvis det ikke gjøres, vil dataen ikke settes i riktig rekkefølge, og metoder som 
+	hentArtistUtvalg vil ikke fungere som den skal.
